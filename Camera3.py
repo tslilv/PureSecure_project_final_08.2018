@@ -125,7 +125,7 @@ class Camera():
         smtp3.send_email(self.email, SUBJECT, BODY, [SCREENSHOT_NAME+str(Camera.sh_id)+SCREENSHOT_TYPE, LOGO_IMG])
 
 
-def main(user="tslil7v@gmail.com"):
+def main(user="email_user"):
     # Create a camera instance
     cam1 = Camera(user)
 
