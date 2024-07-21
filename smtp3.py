@@ -65,7 +65,6 @@ def send_email(to_addr, subject, body, attach_files):
     # terminating the session
     s.quit()
 
-    print ("bbb,", body)
 
 send_email('to_email_addre', 'try', "body", ['logo.jpg'])
 
