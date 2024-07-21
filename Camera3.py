@@ -61,7 +61,7 @@ class Camera():
         self.next_frame = cv2.cvtColor(self.cap.read()[1], cv2.COLOR_RGB2GRAY)
 
         # Define the codec and create VideoWriter object
-        self.fourcc = cv2.cv.CV_FOURCC(*FORMAT)
+        self.fourcc = cv2.VideoWriter_fourcc(*FORMAT)
         self.out = cv2.VideoWriter(VIDEO_NAME+str(Camera.video_id)+VIDEO_TYPE, self.fourcc, self.fps, (self.w, self.h))
         Camera.video_id += 1
 
