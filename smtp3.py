@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-FROM = ''
+FROM = 'from email address'
 
 
 def send_email(to_addr, subject, body, attach_files):
