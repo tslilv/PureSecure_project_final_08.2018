@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-FROM = 'tslil3v@gmail.com'
+FROM = ''
 
 
 def send_email(to_addr, subject, body, attach_files):
@@ -54,7 +54,7 @@ def send_email(to_addr, subject, body, attach_files):
     s.starttls()
 
     # Authentication
-    s.login(FROM, "AS1123zx")
+    s.login(FROM, "password")
 
     # Converts the Multipart msg into a string
     text = msg.as_string()
@@ -67,5 +67,5 @@ def send_email(to_addr, subject, body, attach_files):
 
     print ("bbb,", body)
 
-send_email('tslil7v@gmail.com', 'try', "body", ['logo.jpg'])
+send_email('to_email_addre', 'try', "body", ['logo.jpg'])
 
