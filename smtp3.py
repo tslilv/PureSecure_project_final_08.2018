@@ -66,5 +66,5 @@ def send_email(to_addr, subject, body, attach_files):
     s.quit()
 
 
-send_email('to_email_addre', 'try', "body", ['logo.jpg'])
+# send_email('to_email_addre', 'head', "body", ['logo.jpg'])
 
