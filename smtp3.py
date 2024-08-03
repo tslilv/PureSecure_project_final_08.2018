@@ -11,7 +11,6 @@ FROM = 'from email address'
 
 
 def send_email(to_addr, subject, body, attach_files):
-    print ("bbb,", body)
 
     # instance of MIMEMultipart
     msg = MIMEMultipart()
