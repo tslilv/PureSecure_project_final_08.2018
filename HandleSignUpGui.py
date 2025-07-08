@@ -153,7 +153,6 @@ class HandleGUI:
 
     def check_password(self, password):
         # password Password has to meet the following criteria:
-        # http://crambler.com/password-security-why-secure-passwords-need-length-over-complexity/
         if len(password) < 8:
             self.label4.configure(text=ERROR4)
             return False
